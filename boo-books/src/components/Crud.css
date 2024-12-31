@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F9F6FA; /* Color secundario */
+}
+
+h1 {
+    color: #592515; /* Color principal */
+    font-size: 1.8em; /* Aumenta el tamaño del encabezado */
+}
+
+button {
+    background-color: #305252; /* Cuarto color */
+    color: #F9F6FA; /* Color secundario */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px; /* Reduce el padding de los botones */
+    margin: 0 4px; /* Reduce el margen de los botones */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    max-width: 200px; /* Establece un ancho máximo */
+    font-size: 0.9em; /* Tamaño de fuente un poco más pequeño */
+}
+
+button:hover {
+    background-color: #488286; /* Quinto color */
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px; /* Aumenta el padding de los inputs */
+    border: 1px solid #77878B; /* Color terciario */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px; /* Establece un ancho máximo */
+    font-size: 1em; /* Aumenta el tamaño de fuente */
+}
+
+.bookList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px; /* Reduce el padding de los libros */
+    border-bottom: 1px solid #ccc;
+    font-size: 1em; /* Aumenta el tamaño de fuente */
+    margin-bottom: 5px; /* Espaciado inferior reducido */
+}
+
+.buttons {
+    display: flex;
+    gap: 8px; /* Espaciado entre botones */
+    margin-left: 10px; /* Ajusta según sea necesario */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em; /* Ajusta el tamaño en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 0.8em; /* Tamaño más pequeño en pantallas pequeñas */
+        padding: 6px 10px; /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    input {
+        font-size: 0.9em; /* Tamaño más pequeño en pantallas pequeñas */
+        padding: 8px; /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    .bookList {
+        font-size: 0.9em; /* Tamaño más pequeño en pantallas pequeñas */
+    }
+}
